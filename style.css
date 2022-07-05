@@ -26,9 +26,47 @@ header {
 .game-background {
     background-color: #f9f9f9;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     align-items: center;
     justify-content: center;
     flex: 1;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.input1 label, .input2 label {
+    padding-right: 10px;
+}
+
+.input1 input, .input2 input {
+    height: 28px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+.start-game-btn {
+    height: 48px;
+    width: 180px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    background-color: #d2d2d2;
+}
+
+.start-game-btn:hover {
+    cursor: pointer;
+    background-color: #ebebeb;
+}
+
+.start-game-btn:focus {
+    background-color: #9f9f9f;
 }
 
 .game-body {
@@ -67,4 +105,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-left: 3px;
 }
